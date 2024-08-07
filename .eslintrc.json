@@ -1,3 +1,125 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "eslint:recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:tailwindcss/recommended",
+    "next/core-web-vitals",
+    "plugin:tailwindcss/recommended",
+    "next"
+  ],
+  "plugins": [
+    "@stylistic",
+    "simple-import-sort"
+  ],
+  "rules": {
+    // react-hooks
+    "react-hooks/rules-of-hooks": 2,
+    "react-hooks/exhaustive-deps": 1,
+    // simple-import-sort
+    "simple-import-sort/imports": 2,
+    "simple-import-sort/exports": 2,
+    // 
+    "@next/next/no-img-element": "off",
+    // Eslint
+    "arrow-body-style": [
+      2,
+      "as-needed"
+    ],
+    "no-console": 1,
+    "no-unused-vars": 1,
+    "no-lonely-if": 1,
+    "no-undef": 2,
+    "consistent-return": 0,
+    "no-nested-ternary": 1,
+    "no-unexpected-multiline": 1,
+    "prefer-const": 2,
+    "key-spacing": [
+      2,
+      {
+        "align": "value"
+      }
+    ],
+    // ESLint Stylistic
+    "@stylistic/array-bracket-spacing": 1,
+    "@stylistic/arrow-spacing": 1,
+    "@stylistic/arrow-parens": 2,
+    "@stylistic/comma-dangle": [
+      2,
+      {
+        "objects": "always-multiline",
+        "exports": "always-multiline"
+      }
+    ],
+    "@stylistic/comma-spacing": 1,
+    "@stylistic/semi": 1,
+    "@stylistic/quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "@stylistic/quote-props": [
+      2,
+      "consistent-as-needed"
+    ],
+    "@stylistic/eol-last": 2,
+    "@stylistic/indent": [
+      1,
+      2
+    ],
+    // "@stylistic/jsx/jsx-closing-bracket-location": 1,
+    "@stylistic/jsx-closing-tag-location": 2,
+    "@stylistic/jsx-max-props-per-line": [
+      1,
+      {
+        "when": "multiline"
+      }
+    ],
+    // "@stylistic/jsx/jsx-wrap-multilines": 1,
+    "@stylistic/keyword-spacing": 1,
+    "@stylistic/linebreak-style": [
+      2,
+      "windows"
+    ],
+    "@stylistic/no-multi-spaces": [
+      2,
+      {
+        "ignoreEOLComments": true
+      }
+    ],
+    "@stylistic/no-multiple-empty-lines": [
+      1,
+      {
+        "max": 2,
+        "maxEOF": 1
+      }
+    ],
+    "@stylistic/no-trailing-spaces": 1,
+    "@stylistic/object-property-newline": 2,
+    "@stylistic/object-curly-newline": 2,
+    "@stylistic/space-before-blocks": [
+      2,
+      "always"
+    ],
+    "@stylistic/space-before-function-paren": [
+      2,
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx",
+        "*.js"
+      ],
+      "parser": "@typescript-eslint/parser"
+    }
+  ]
 }
