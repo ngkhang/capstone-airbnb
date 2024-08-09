@@ -8,7 +8,8 @@ const buildEslintCommand = (filenames) => {
 }
 
 module.exports = {
-  '*.{js,jsx,ts,tsx}': [
+  '*.{js,jsx,ts,tsx,scss,css}': [
+    "stylelint '**/*.{scss,css}' --fix",
     buildEslintCommand
   ],
 };

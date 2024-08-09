@@ -1,0 +1,11 @@
+node_modules
+package.json
+package-lock.json
+tsconfig.json
+postcss.config.mjs
+next-env.d.ts
+public/*
+src/assets/*
+*.json
+*.scss
+*.d.ts
