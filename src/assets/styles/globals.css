@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  color: #484848;
+  background-color: #fff;
+  line-break: strict;
+  font-family: var(--font-airbnb);
+  box-sizing: border-box;
+}
+
+/* @layer components {
+
+} */
+
+@layer utilities {
+  .center {
+    @apply flex justify-center items-center;
+  }
+}
