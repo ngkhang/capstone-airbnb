@@ -1,0 +1,27 @@
+.auth-form {
+  @apply grid grid-cols-2 gap-x-5;
+
+  .ant-form-item {
+    @apply col-span-2 mb-8;
+  }
+
+  input {
+    @apply text-base;
+  }
+
+  .ant-form-item-explain-error {
+    @apply text-sm;
+  }
+
+  .btn-form {
+    @apply grid-cols-subgrid gap-2 col-span-2 grid;
+
+    button {
+      @apply col-span-2 py-5 text-lg bg-[#FF385C] text-white hover:border-inherit;
+
+      &.btn-signup {
+        @apply sm:col-span-1 md:col-span-2 lg:col-span-1;
+      }
+    }
+  }
+}
