@@ -12,3 +12,19 @@ export interface FormField {
   config: FormItemProps,
   field: React.ReactNode,
 }
+
+export interface ApiResponse<T> {
+  statusCode: number;
+  content: T;
+}
+
+export interface ErrorResponse {
+  message: string;
+  statusCode: number;
+  redirectUrl: string,
+}
+
+export interface MiddlewareApi<T> {
+  error?: ErrorResponse;
+  data?: T;
+}
